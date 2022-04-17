@@ -22,14 +22,14 @@ function mobileAudio(){
 			  if(play){
 			    player = setInterval(playerInterval, 400); 
 			    $("#playButton").html("PAUSE");
-				document.getElementById('music').play();
+				document.getElementById('music').pause();
 				play = false; 
 				} 
 				else {
 				clearInterval(player);
 			    player = jQuery('.equalizer span').css('height',2);
 			    $("#playButton").html("&nbsp;PLAY&nbsp;&nbsp;");
-			    document.getElementById('music').pause();
+			    document.getElementById('music').play();
 			    play = true;
 			}
 		});
